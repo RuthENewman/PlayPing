@@ -1,7 +1,7 @@
 body, html {
   height: 100vh;
   text-align: center;
-  font-family: monospace;
+  font-family: sans-serif;
   background-image: -webkit-linear-gradient(bottom, #fddb92 0%, #d1fdff 100%);
   background-image: -o-linear-gradient(bottom, #fddb92 0%, #d1fdff 100%);
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
@@ -9,7 +9,24 @@ body, html {
   overflow: hidden;
 }
 
-.heading {
+.headerSection {
   margin-top: 20px;
-  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 50px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+#logo {
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
 }
