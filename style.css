@@ -1,0 +1,15 @@
+body, html {
+  height: 100vh;
+  text-align: center;
+  font-family: monospace;
+  background-image: -webkit-linear-gradient(bottom, #fddb92 0%, #d1fdff 100%);
+  background-image: -o-linear-gradient(bottom, #fddb92 0%, #d1fdff 100%);
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  color: lawngreen;
+  overflow: hidden;
+}
+
+.heading {
+  margin-top: 20px;
+  font-size: 35px;
+}
