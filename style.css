@@ -67,3 +67,39 @@ body, html {
 .difficultLevel {
    background-color: red;
 }
+
+#fullSizeMessage {
+  display: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #gameCanvas {
+    width: 180px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  #logo {
+    height: 50px;
+  }
+
+  .heading {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #fullSizeMessage {
+    width: 280px;
+    display: block;
+    font-size: 16px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 4px solid limegreen;
+  }
