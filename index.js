@@ -6,9 +6,9 @@ let ballXSpeed = 15;
 let ballYSpeed = 8;
 let paddle1Y = 210;
 let paddle2Y = 210;
-let paddleHeight = 150;
+let paddleHeight = 100;
 const PADDLE_WIDTH = 15;
-let paddle2Height = 150;
+let paddle2Height = 80;
 const WINNING_SCORE = 10;
 let winningScreen = false;
 let player1Score = 0;
@@ -51,17 +51,17 @@ window.onload = function() {
     paddle1Y = mousePosition.y - (paddleHeight / 2);
   })
   easyLevelButton.addEventListener('click', event => {
-      paddleHeight = 200;
-      paddle2Height = 50;
+      paddleHeight = 120;
+      paddle2Height = 80;
       ballXSpeed = 10;
     })
     intermediateLevelButton.addEventListener('click', event => {
-      paddleHeight = 150;
-      paddle2Height = 120;
+      paddleHeight = 100;
+      paddle2Height = 80;
       ballXSpeed = 15;
     })
     difficultLevelButton.addEventListener('click', event => {
-      paddleHeight = 100;
+      paddleHeight = 50;
       paddle2Height = 100;
       ballXSpeed = 20;
     })
@@ -142,12 +142,12 @@ function drawGame() {
 		context.fillStyle = 'white';
     context.font = '40px Arial';
 		if(player1Score >= WINNING_SCORE) {
-			context.fillText("You won!", 350, 200);
+			context.fillText("You won!", 150, 150);
 		} else if(player2Score >= WINNING_SCORE) {
-			context.fillText("You lost.", 350, 200);
+			context.fillText("You lost.", 150, 150);
 		}
 
-		context.fillText("Play again?", 350, 400);
+		context.fillText("Play again?", 150, 300);
 		return;
 	}
 
@@ -163,7 +163,7 @@ function drawGame() {
   context.fillStyle = 'white';
   context.font = '40px Arial';
   context.fillText(player1Score, 150, 100);
-  context.fillText(player2Score, 650, 100);
+  context.fillText(player2Score, 450, 100);
 }
 
 function colourRect(leftX, topY, width, height, colour) {
